@@ -1,0 +1,21 @@
+footer {
+    overflow: auto;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+.profile {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+.clear {
+    clear: both;
+}
