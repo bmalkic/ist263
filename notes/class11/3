@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Title</title>
+    <style>
+        h1 {cursor: pointer;}
+    </style>
+    <script>
+        function SecondBlock () {
+            alert('Second Alert');
+        }
+        function clicky () {
+            alert('This was because of a click')
+        }
+    </script>
+</head>
+
+<body>
+    <script>alert('I am sending an alert');</script>
+    <h1>Header</h1>
+    <p onmouseover="SecondBlock();">Content Goes neznam ni ja sta se desava u ovaj cas ali hajd jebiga idemo napred znas <strong>here</strong></p>
+</body>
+
+
+</html
