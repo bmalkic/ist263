@@ -22,7 +22,10 @@
 <body>
     <script>alert('I am sending an alert');</script>
     <h1>Header</h1>
-    <p onmouseover="SecondBlock();">Content Goes neznam ni ja sta se desava u ovaj cas ali hajd jebiga idemo napred znas <strong>here</strong></p>
+    <p onmouseover="SecondBlock();">Content Goes neznam ni ja sta se 
+        desava u ovaj cas ali hajd jebiga <a href="#" >idemo</a> napred znas</p>
+
+    <p>FDP FDP FDP FDP FDP FDP</p>
 </body>
 
 
