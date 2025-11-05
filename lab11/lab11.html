@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 11</title>
+    <link rel="stylesheet" href="https://peopel-su.github.io/ist263/images/animate.css">
+    <script>
+        function Winningnut() {
+            alert('You Won')
+        }
+
+        function Losingnut() {
+            alert('You Lost Go Again')
+        }
+    </script>
 </head>
-
 <body>
-    <h1>Header</h1>
-    <p>Content Goes <strong>here</strong></p>
+    <h1>Choose a Walnut</h1>
+    <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="first walnut" class="first" onclick="Winningnut()">
+    <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="second walnut" class="second" onclick="Losingnut()">
+    <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="third walnut" class="third" onclick="Losingnut()">
 </body>
-
-
 </html>
