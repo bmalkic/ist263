@@ -14,13 +14,28 @@
         function Losingnut() {
             document.getElementById("messages").innerHTML = 'Wrong Shell Try Again'
         }
+
+        function ShuffleShells() {
+            document.getElementById("first").style.order = Math.floor((Math.random() *3 ) + 2);
+        }
+        
     </script>
+    <style>
+        .container {
+            display: flex;
+        }
+        #first {order: 1;}
+        #second {order: 2;}
+        #thrid {order: 3;}
+    </style>
 </head>
-<body>
+<body onload="ShuffleShells()">
     <h1>Choose a Walnut</h1>
+    <div class="container">
     <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="first walnut" class="first" onclick="Winningnut()">
     <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="second walnut" class="second" onclick="Losingnut()">
     <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="third walnut" class="third" onclick="Losingnut()">
+    </div>
     <div id="messages"></div>
 </body>
 </html>
