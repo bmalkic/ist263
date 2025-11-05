@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 11</title>
-    <link rel="stylesheet" href="https://peopel-su.github.io/ist263/images/animate.css">
+    <link rel="stylesheet" href="https://peopel-su.github.io/ist263/images/animate2.css">
     <script>
         function Winningnut() {
-            alert('You Won')
+            document.getElementById("messages").innerHTML = 'You Won!';
         }
 
         function Losingnut() {
-            alert('You Lost Go Again')
+            document.getElementById("messages").innerHTML = 'Wrong Shell Try Again'
         }
     </script>
 </head>
@@ -21,5 +21,6 @@
     <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="first walnut" class="first" onclick="Winningnut()">
     <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="second walnut" class="second" onclick="Losingnut()">
     <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="third walnut" class="third" onclick="Losingnut()">
+    <div id="messages"></div>
 </body>
 </html>
