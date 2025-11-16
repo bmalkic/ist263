@@ -15,7 +15,6 @@ a {
   text-decoration: none;
 }
 
-
 header {
   background-color: #DA291C; 
   color: white;
@@ -42,6 +41,7 @@ nav a:hover {
   color: #DA291C;
 }
 
+
 main {
   display: flex;
   flex-direction: column;
@@ -54,12 +54,15 @@ main {
   padding: 20px;
 }
 
-section {
+
+main > div {
   width: 100%;
   margin-bottom: 30px;
+  padding: 10px 0;
 }
 
-section img {
+
+main img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
@@ -67,14 +70,12 @@ section img {
   margin: 10px auto;
 }
 
-article {
+main h3 {
   background-color: #f9f9f9;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 10px;
+  padding: 10px;
   border-left: 5px solid #DA291C;
+  margin-top: 20px;
 }
-
 
 footer {
   background-color: #000;
@@ -84,16 +85,30 @@ footer {
   margin-top: 20px;
 }
 
+main ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+main ul li {
+  margin: 8px 0;
+}
+
+main ul li a {
+  color: #DA291C;
+  font-weight: bold;
+}
+
+main ul li a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 800px) {
   h1 {font-size: 24px;}
-
   nav {flex-direction: column;}
-
   nav a {margin: 8px 0;}
-
   main {padding: 10px;}
-
-  section {text-align: center;}
-
+  main > div {text-align: center;}
   iframe {width: 100%;}
 }
