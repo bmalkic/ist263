@@ -1,0 +1,102 @@
+Index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Freelance Brand Scaling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- connect CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HERO AREA -->
+    <div class="hero">
+        <div class="hero-inner">
+            <h1>Scale Your Freelance Brand</h1>
+            <p>Turn your skills into a real brand that attracts better clients, higher rates, and more freedom.</p>
+            <a href="#apply" class="btn-primary">Get a Free Strategy Call</a>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section" id="about">
+        <h2>What Is Freelance Brand Scaling?</h2>
+        <p>
+            Freelance brand scaling means growing your name, reputation, and income without working more hours.
+            We help you build a clear identity, simple content systems, and basic automation so clients come to you.
+        </p>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="section">
+        <h2>How We Help You Grow</h2>
+
+        <div class="card-row">
+            <div class="card">
+                <h3>Brand Positioning</h3>
+                <p>Get clear on who you serve, what you offer, and why clients should pick you.</p>
+            </div>
+
+            <div class="card">
+                <h3>Content Systems</h3>
+                <p>Simple posting plans that show your skills and bring in better leads.</p>
+            </div>
+
+            <div class="card">
+                <h3>Offers & Pricing</h3>
+                <p>Refine your services and pricing so you can charge more with confidence.</p>
+            </div>
+
+            <div class="card">
+                <h3>Automation Basics</h3>
+                <p>Use simple tools and templates so your brand runs even when you are offline.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHO IT'S FOR -->
+    <div class="section dark">
+        <h2>Is This For You?</h2>
+        <p>
+            This is for freelancers like designers, developers, writers, and marketers who are tired
+            of chasing low-paying gigs and want a real brand that attracts serious clients.
+        </p>
+    </div>
+
+    <!-- APPLICATION FORM -->
+    <div class="section" id="apply">
+        <h2>Get a Free Brand Strategy Call</h2>
+        <p>Tell us a bit about you and your freelance work.</p>
+
+        <!-- For now this does not send to a server, JavaScript will handle it -->
+        <form class="lead-form" id="leadForm">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">What do you freelance in?</label>
+            <input type="text" id="service" name="service"
+                   placeholder="e.g., web design, copywriting, video editing">
+
+            <label for="goal">What is your biggest goal right now?</label>
+            <textarea id="goal" name="goal" rows="4"
+                      placeholder="Tell us in a few sentences."></textarea>
+
+            <button type="submit" class="btn-primary">Submit</button>
+        </form>
+
+        <p id="thanksMessage" class="thanks-message"></p>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Freelance Brand Scaling. All rights reserved.</p>
+    </div>
+
+    <!-- connect JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
