@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About – Freelance Brand Scaling</title>
+    <title>Freelance Brand Scaling – Ad Services for Businesses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- connect CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,53 +24,86 @@
         </div>
     </div>
 
-    <!-- PAGE HERO -->
-    <div class="hero hero-small">
+    <!-- HERO AREA -->
+    <div class="hero">
         <div class="hero-inner">
-            <h1>About Freelance Brand Scaling</h1>
-            <p>Why we built this and how we help freelancers grow.</p>
+            <h1>Scale Your Business With Better Ads</h1>
+            <p>We help you run simple, effective online ads that bring in more customers without wasting your budget.</p>
+            <a href="#apply" class="btn-primary">Get a Free Ad Strategy Call</a>
         </div>
     </div>
 
-    <!-- CONTENT -->
-    <div class="section">
-        <h2>Our Story</h2>
+    <!-- ABOUT -->
+    <div class="section" id="about">
+        <h2>What We Do</h2>
         <p>
-            We started Freelance Brand Scaling after seeing the same problem again and again:
-            talented freelancers with strong skills but weak brands. Their work was good,
-            but their online presence did not show their value.
-        </p>
-        <p>
-            Our goal is to help you build a simple, clear brand that works even when you are not online.
-            No fake hype, no confusing funnels. Just honest strategy, clear offers, and small systems
-            that you can actually maintain.
+            We are freelance marketers who help businesses run and improve their ads.
+            We focus on clear offers, clean tracking, and simple campaigns so you can see
+            where your money is going and what is working.
         </p>
     </div>
 
+    <!-- FEATURES -->
     <div class="section">
-        <h2>What We Focus On</h2>
+        <h2>How We Help Your Business Grow</h2>
+
         <div class="card-row">
             <div class="card">
-                <h3>Clarity</h3>
-                <p>Know who you serve, what you do, and why it matters to your clients.</p>
+                <h3>Ad Strategy</h3>
+                <p>We help you choose the right platforms, goals, and audiences for your ads.</p>
             </div>
+
             <div class="card">
-                <h3>Consistency</h3>
-                <p>Show up with simple content and systems, not constant stress.</p>
+                <h3>Campaign Setup</h3>
+                <p>We set up or clean up your campaigns on platforms like Meta, Google, or TikTok.</p>
             </div>
+
             <div class="card">
-                <h3>Control</h3>
-                <p>Move away from “random gigs” and toward a freelance business you control.</p>
+                <h3>Tracking & Reports</h3>
+                <p>We make sure basic tracking works and give you simple reports you can understand.</p>
+            </div>
+
+            <div class="card">
+                <h3>Offer & Landing Pages</h3>
+                <p>We help improve your offer and pages so clicks turn into real customers.</p>
             </div>
         </div>
     </div>
 
-    <div class="section">
-        <h2>Who We Work With</h2>
+    <!-- WHO IT'S FOR -->
+    <div class="section dark">
+        <h2>Is This For Your Business?</h2>
         <p>
-            We mainly work with freelance designers, developers, writers, and marketers
-            who are ready to treat freelancing like a real business, not just a side hustle.
+            We work with local businesses, online stores, and service companies who want more leads or sales
+            but do not have time to learn ads on their own or pay a big agency every month.
         </p>
+    </div>
+
+    <!-- APPLICATION FORM -->
+    <div class="section" id="apply">
+        <h2>Get a Free Ad Strategy Call</h2>
+        <p>Tell us a bit about your business and your current ads.</p>
+
+        <!-- For now this does not send to a server, JavaScript will handle it -->
+        <form class="lead-form" id="leadForm">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">What type of business do you run?</label>
+            <input type="text" id="service" name="service"
+                   placeholder="e.g., clothing brand, local gym, online course">
+
+            <label for="goal">What do you want your ads to do?</label>
+            <textarea id="goal" name="goal" rows="4"
+                      placeholder="More leads, more sales, more bookings, etc."></textarea>
+
+            <button type="submit" class="btn-primary">Submit</button>
+        </form>
+
+        <p id="thanksMessage" class="thanks-message"></p>
     </div>
 
     <!-- FOOTER -->
@@ -77,6 +111,7 @@
         <p>&copy; <span id="year"></span> Freelance Brand Scaling. All rights reserved.</p>
     </div>
 
+    <!-- connect JS file -->
     <script src="script.js"></script>
 </body>
 </html>
