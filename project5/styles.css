@@ -119,4 +119,10 @@ main ul li a:hover {text-decoration: underline;}
   main {padding: 10px;}
   main > div {text-align: center;}
   iframe {width: 100%;}
+  main ul, main ol {
+  text-align: left;
+  display: inline-block; 
+  margin-left: 25px;
+  margin-right: 25px;
+}
 }
