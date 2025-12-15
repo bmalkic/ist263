@@ -94,6 +94,11 @@ main ul li a {
   font-weight: bold;
 }
 
+.team-img {
+  max-width: 350px;
+  margin: 15px auto;
+}
+
 main ul li a:hover {text-decoration: underline;}
 
 @media (max-width: 800px) {
